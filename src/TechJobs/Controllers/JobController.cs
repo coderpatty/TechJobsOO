@@ -2,6 +2,7 @@
 using TechJobs.Data;
 using TechJobs.ViewModels;
 using TechJobs.Models;
+using System;
 
 namespace TechJobs.Controllers
 {
@@ -52,7 +53,7 @@ namespace TechJobs.Controllers
                 };
 
                 jobData.Jobs.Add(newJob);
-                return Redirect("/job?id={0}" + newJob.ID);
+                return Redirect(String.Format("/job?id={0}",  newJob.ID));
             }
             return View(newJobViewModel);
         }
