@@ -22,18 +22,18 @@ namespace TechJobs.ViewModels
         public string Value { get; set; } = "";
 
 
-        public SearchJobsViewModel()
-        {
+        //public SearchJobsViewModel()
+        //{
             // Populate the list of all columns
 
-            Columns = new List<JobFieldType>();
+            //Columns = new List<JobFieldType>();
 
-            foreach (JobFieldType enumVal in Enum.GetValues(typeof(JobFieldType)))
-            {
-                Columns.Add(enumVal);
-            }
+            //foreach (JobFieldType enumVal in Enum.GetValues(typeof(JobFieldType)))
+            //{
+                //Columns.Add(enumVal);
+            //}
 
 
-        }
+        //}
     }
 }
